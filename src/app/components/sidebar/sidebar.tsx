@@ -15,7 +15,7 @@ function Sidebar() {
             <div className='icon-container'>
               <HomeRoundedIcon className='icon'/>
             </div>
-            <a> Home </a>
+            <a href='#home'> Home </a>
           </div>
         </nav>
       </div>

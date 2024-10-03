@@ -24,7 +24,7 @@ nav{
     &.active{
         cursor: pointer;
         .icon {
-          fill: var(--purple-color);
+          fill: #8EACFD;
         }
         a {
             background: var(--primary-color);
