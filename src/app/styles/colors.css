@@ -1,0 +1,6 @@
+:root {
+    --primary-color: linear-gradient(to right,#8EACFD 0%, #B29CFD 20%, #F689D5 60%, #FD8FA0 90%);
+    --dark-color: #1F2028;
+    --dark-grey-color: #2A2C36;
+    --grey-color: #373A48;
+}
