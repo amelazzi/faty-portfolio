@@ -1,6 +1,7 @@
 import Sidebar from "./components/sidebar/sidebar"
 import Home from './components/home/home'
 import './page.css'
+import ResearchTopics from "./components/research_topics/research-topics";
 
 export default function Index() {
   return (
@@ -8,6 +9,7 @@ export default function Index() {
       <Sidebar/>
       <main className="main-content">
         <Home/>
+        <ResearchTopics/>
       </main>
     </div>
   );

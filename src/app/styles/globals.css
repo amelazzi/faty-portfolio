@@ -28,3 +28,7 @@ h1{
   font-size: 58px;
   font-weight: 400;
 }
+
+.section-container{
+  padding: 64px 72px 64px 72px;
+}
