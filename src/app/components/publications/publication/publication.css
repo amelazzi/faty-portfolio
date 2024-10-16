@@ -2,11 +2,13 @@
     width: 30%;
     background-color: white;
     border-radius: 12px;
+    height: 340px;
 }
 
 .card-title{
     height: 150px;
     background-image: url('../../../../../public/images/card-background.svg');
+    background-size: cover;
 }
 
 .card-overlay {

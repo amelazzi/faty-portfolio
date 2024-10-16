@@ -1,6 +1,7 @@
 
 .publications-section{
     background-color: var(--dark-grey-color);
+    height: 100vh;
 }
 
 .publications-container{
@@ -11,10 +12,13 @@
 }
 
 .timeline{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 32px;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
 }
 
 .year-container{
@@ -29,13 +33,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(252, 142, 171, .4);
+    }
+    &.selected-year{
+        background: var(--primary-color);
+    }
+}
+
+.timeline-divider{
+    position: absolute;
+    border: none;
+    border-left: 5px solid white;
+    height: 32px;
+    left: 50%;
 }
 
 .publications{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 24px;
+    gap: 24px 32px;
+    height: calc(100vh - 250px);
+    overflow: auto;
 }

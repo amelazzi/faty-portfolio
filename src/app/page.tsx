@@ -1,3 +1,4 @@
+"use client"
 import Sidebar from "./components/sidebar/sidebar"
 import Home from './components/home/home'
 import './page.css'
