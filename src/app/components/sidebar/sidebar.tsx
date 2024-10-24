@@ -6,12 +6,25 @@ import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch'
 import DescriptionIcon from '@mui/icons-material/Description'
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver'
 import MessageIcon from '@mui/icons-material/Message'
+import { useScrollListener } from '@/utils/scroll-listner'
 
 function Sidebar() {
   const [isActive, setIsActive] = useState('Home')
 
+  const [isScrolled] = useScrollListener((isScrolled) => {
+    if (isScrolled) {
+      // Sidebar scrolled past viewport
+      console.log('Sidebar scrolled past viewport');
+      // Add your logic to change the sidebar color here
+    } else {
+      // Sidebar is not scrolled past viewport
+      console.log('Sidebar not scrolled past viewport');
+      // Remove the color change or apply the default style
+    }
+  });
+
   return (
-    <div className='sidebar-container'>
+    <div className='sidebar-container' style={{ backgroundColor: isScrolled ? 'blue' : 'red' }}>
       <div>
         <h2> Fatiha SAIS </h2>
         <nav>
