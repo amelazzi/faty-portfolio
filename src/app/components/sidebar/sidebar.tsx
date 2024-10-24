@@ -4,7 +4,8 @@ import './sidebar.css'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
 import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch'
 import DescriptionIcon from '@mui/icons-material/Description'
-import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver'
+import MessageIcon from '@mui/icons-material/Message'
 
 function Sidebar() {
   const [isActive, setIsActive] = useState('Home')
@@ -37,6 +38,12 @@ function Sidebar() {
               <RecordVoiceOverIcon className='icon'/>
             </div>
             <a href='#talks'> Talks </a>
+          </div>
+          <div className={`link-container ${isActive === 'Get in touch' ? 'active' : ''}`} onClick={() => setIsActive('Get in touch')}>
+            <div className='icon-container'>
+              <MessageIcon className='icon'/>
+            </div>
+            <a href='#contact'> Get in touch </a>
           </div>
         </nav>
       </div>
