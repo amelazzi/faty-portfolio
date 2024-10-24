@@ -1,0 +1,68 @@
+
+.publications-section{
+    background-color: var(--dark-grey-color);
+    height: 100vh;
+}
+
+.publications-container{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.timeline-container{
+    width: 140px;
+    height: calc(100vh - 250px);
+    overflow-y: scroll;
+}
+
+.timeline{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.year-container{
+    max-width: 120px;
+    min-width: 120px;
+    max-height: 42px;
+    min-height: 42px;
+    background-color: var(--light-grey-color);
+    border-radius: 12px;
+    font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(252, 142, 171, .4);
+    }
+    &.selected-year{
+        background: var(--primary-color);
+    }
+}
+
+.timeline-divider{
+    position: absolute;
+    border: none;
+    border-left: 5px solid white;
+    height: 32px;
+    left: 50%;
+}
+
+.publications{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px 32px;
+    height: calc(100vh - 250px);
+    overflow: auto;
+}

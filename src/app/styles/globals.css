@@ -8,6 +8,10 @@ body {
   display: inline-block;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;

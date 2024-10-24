@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './sidebar.css'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
 import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch'
+import DescriptionIcon from '@mui/icons-material/Description';
 
 function Sidebar() {
   const [isActive, setIsActive] = useState('Home')
@@ -23,6 +24,12 @@ function Sidebar() {
               <ContentPasteSearchIcon className='icon'/>
             </div>
             <a href='#research-topics'> Research topics </a>
+          </div>
+          <div className={`link-container ${isActive === 'Publications' ? 'active' : ''}`} onClick={() => setIsActive('Publications')}>
+            <div className='icon-container'>
+              <DescriptionIcon className='icon'/>
+            </div>
+            <a href='#publications'> Publications </a>
           </div>
         </nav>
       </div>
